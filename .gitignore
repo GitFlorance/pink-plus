@@ -1,0 +1,7 @@
+```
+*.cdr
+*.eps
+ignore/
+node_modules/
+.idea/
+```
