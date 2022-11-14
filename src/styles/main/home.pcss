@@ -1,0 +1,59 @@
+.home {
+  display: flex;
+  align-items: flex-end;
+  Justify-content: center;
+
+  &__info {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 130px 0;
+
+    &-name {
+      font: 300 50px/68px 'Open Sans', sans-seri;
+      text-align: center;
+      color: #FFFFFF;
+      width: 300px;
+      margin: 50px 0;
+    }
+    &-button {
+      color: #FFFFFF;
+      font: 700 21px/18px 'Open Sans', sans-seri;
+      padding: 20px 28px;
+      border: 3px solid #FFFFFF;
+      border-radius: 32px;
+    }
+    &-img {
+      margin: 60px 0;
+      display: flex;
+      align-items: center;
+      Justify-content: center;
+    }
+    &-svg {
+      margin: 0 17px;
+    }
+    &-annex {
+      font: 300 18px/24px 'Open Sans', sans-seri;
+      text-align: center;
+      color: #FFFFFF;
+    }
+  }
+  &__img {
+
+    position: relative;
+    &-phone {
+      width: 700px;
+      height: 645px;
+
+      background: url(/images/phone.png);
+      background-position: 55%;
+      background-size: cover;
+    }
+    &-screen {
+      position: absolute;
+      top: 65px;
+      left: 378px;
+    }
+  }
+}
