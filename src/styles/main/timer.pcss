@@ -1,0 +1,42 @@
+.timer {
+  display: flex;
+  margin: 50px 200px;
+  max-width: 920px;
+  &__img {
+    position: relative;
+    &-svg {
+
+    }
+    &-day {
+      position: absolute;
+      left: 28px;
+      top: 73px;
+      padding: 0 35px;
+
+      font: 700 120px/208px 'Open Sans', sans-serif;
+      color:  #D22856;
+      align-items: center;
+      text-align: center;
+      border: 18px solid #D22856;
+      border-radius: 180px;
+    }
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 71px;
+    &-article {
+      font: 700 30px/30px 'Open Sans', sans-serif;
+    }
+    &-description {
+      font: 400 18px/30px 'Open Sans', sans-serif;
+      margin: 42px 0;
+    }
+    &-link {
+      font: 400 18px/30px 'Open Sans', sans-serif;
+      text-decoration-line: underline;
+      color:  #D22856;
+    }
+  }
+}
