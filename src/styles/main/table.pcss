@@ -1,0 +1,49 @@
+.table {
+  background-color: #E5E5E5;
+  margin: 140px 80px 80px;
+
+  &__head {
+    display: grid;
+    grid-template-columns: 234px 236px 234px 235px;
+    background-color: #E5E5E5;
+    color: #FFFFFF;
+    gap: 2px;
+
+    &-none {
+      background-color: #F2F2F2;
+      border: 5px solid #F2F2F2;
+    }
+    &-blue {
+      background-color: #283645;
+      padding: 20px 0;
+      border: 2px solid #283645;
+    }
+    &-name {
+      font: 700 18px/30px 'Open Sans', sans-seri;
+      text-align: center;
+    }
+    &-usd {
+      font: 300 24px/30px 'Open Sans', sans-seri;
+      text-align: center;
+    }
+  }
+  &__white {
+    display: grid;
+    grid-template-columns: 234px 234px 234px 234px;
+    gap: 2px;
+    background-color: #E5E5E5;
+    font: 400 18px/30px 'Open Sans', sans-seri;
+    border: 2px solid #E5E5E5;
+    border-radius: 1px;
+    &-text {
+      background-color: white;
+      text-align: left;
+      padding: 20px 20px;
+    }
+    &-svg {
+      background-color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+  }
+}
