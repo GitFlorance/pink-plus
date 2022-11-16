@@ -1,10 +1,36 @@
 .footer {
-  height: 197px;
-  background-color: white;
   position: center;
   display: flex;
+  justify-content: space-between;
+  margin: 75px auto;
 
-  &__background {
-
+  &__pink {
+    margin-left: 100px;
   }
+
+  &__logo {
+    display: flex;
+
+    &-sm {
+      border: 3px solid hsl(211deg 27% 21% / 10%);
+      border-radius: 24px;
+      width: 48px;
+      height: 48px;
+      text-align: center;
+      padding: 11px 0;
+    }
+  }
+
+  &__sign {
+    display: flex;
+    margin-right: 100px;
+    &-text {
+      font: 400 18px/27px 'Open Sans', sans-seri;
+      color: #283645;
+      margin-right: 13px;
+    }
+  }
+}
+footer {
+  width: 100%;
 }
