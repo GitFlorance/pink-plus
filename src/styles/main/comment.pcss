@@ -8,6 +8,7 @@
     font: 400 18px/30px 'Open Sans', sans-serif;
     color: #283645;
     text-align: center;
+    max-width: 688px;
   }
   &__name {
     font: 700 24px/30px 'Open Sans', sans-serif;
@@ -16,5 +17,21 @@
   &__abs {
     font: 400 18px/30px 'Open Sans', sans-serif;
     color: #283645;
+  }
+
+
+
+
+  @media screen and (max-width: 768px) {
+    margin: 0 50px;
+    &__text {
+      max-width: 620px;
+    }
+    &__name {
+      font: 700 20px/30px 'Open Sans', sans-serif;
+    }
+    &__abs {
+      font: 400 14px/30px 'Open Sans', sans-serif;
+    }
   }
 }
