@@ -1,4 +1,5 @@
 .description {
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
@@ -9,16 +10,56 @@
     width: 780px;
     text-align: center;
   }
-  &__body {
+  &__phone {
     display: flex;
     justify-content: center;
-
     &-item {
-      width: 300px;
-      margin: 0 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
   }
+  &__body {
+    display: flex;
+    justify-content: center;
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 252px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    &__name {
+      font: 300 40px/54px 'Open Sans', sans-seri;
+      margin: 58px auto;
+      width: 588px;
+    }
+    &__frame {
+      display: flex;
+      justify-content: center;
+    }
+    &__phone {
+      display: flex;
+      justify-content: center;
+
+      &-item {
+        &:nth-child(1) {
+          display: none;
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+    &__body {
+      flex-direction: column;
+      justify-content: flex-end;
+      &-item {
+        width: 310px;
+        align-items: flex-start;
+      }
+    }
+  }
 }
+

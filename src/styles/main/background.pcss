@@ -1,6 +1,6 @@
 .back {
   position: absolute;
-  height: 650px;
+  height: 580px;
   width: 100%;
   overflow: hidden;
   z-index: -1;
@@ -10,5 +10,15 @@
     width: 110vw;
     transform-origin: right;
     transform: rotate(356deg);
+  }
+  @media screen and (max-width: 768px) {
+    width: 110%;
+    left: 0%;
+    height: 478px;
+    &__ground {
+      width: 110vw;
+      height: 500px;
+      margin-left: -15px;
+    }
   }
 }
