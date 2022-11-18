@@ -2,28 +2,53 @@
 
   &__img {
     position: relative;
+    overflow: hidden;
 
     &-phone {
-
+      margin-bottom: -80px;
     }
     &-screen {
       position: absolute;
       top: 43px;
       left: 8px;
     }
-
+  }
+  &__shadow {
+    width: 100%;
+    position: relative;
+    &-grey {
+      width: 100%;
+      height: 30px;
+      background: #F2F2F2;
+      position: relative;
+      z-index:2;
+    }
+  }
+  &__shadow:after {
+    content:'';
+    position: absolute;
+    z-index:1;
+    bottom: 15%;
+    left:10%;
+    transform: translateY(-15px);
+    width: 80%;
+    height: 1px;
+    background: #999999;
+    border-radius: 15px / 100%;
+    box-shadow: 0 0 8px 10px #0000003b;
   }
   &__article {
     font: 700 30px/30px 'Open Sans', sans-serif;
     text-align: center;
     height: 53px;
     width: 245px;
-    margin: 20px;
+    margin-bottom: 20px;
   }
   &__text {
     font: 400 18px/30px 'Open Sans', sans-serif;
     text-align: center;
-    height: 103px;
+    height: auto;
     width: 252px;
+    margin-bottom: 30px;
   }
 }
