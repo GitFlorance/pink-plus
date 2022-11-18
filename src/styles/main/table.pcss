@@ -60,6 +60,36 @@
       background-color: white;
       text-align: center;
       padding: 20px 0;
+      & svg {
+        vertical-align: middle;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    margin: 100px 0px 80px;
+    background-color: #F2F2F2;
+    &__head {
+      width: 608px;
+      margin: 0 auto;
+      &-pink {
+        font: 400 14px/25px 'Open Sans', sans-seri;
+        top: 10px;
+        left: -55px;
+      }
+      &-name {
+        font: 700 16px/30px 'Open Sans', sans-seri;
+      }
+    }
+    &__white {
+      width: 608px;
+      margin: 0 auto;
+      font: 300 14px/30px 'Open Sans', sans-seri;
+      &-text {
+        padding: 10px 0 10px 20px;
+      }
+      &-svg {
+        padding: 9px 0;
+      }
     }
   }
 }
