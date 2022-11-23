@@ -3,14 +3,10 @@
   display: flex;
   justify-content: space-between;
   margin: 75px auto;
-
-  &__pink {
-    margin-left: 100px;
-  }
-
+  width: 100%;
+  padding: 0 100px;
   &__logo {
     display: flex;
-
     &-sm {
       border: 3px solid hsl(211deg 27% 21% / 10%);
       border-radius: 24px;
@@ -21,17 +17,31 @@
       margin: 0 4px;
     }
   }
-
   &__sign {
     display: flex;
-    margin-right: 100px;
     &-text {
-      font: 400 18px/27px 'Open Sans', sans-seri;
+      font: 400 18px/48px 'Open Sans', sans-seri;
       color: #283645;
       margin-right: 13px;
     }
+    &-svg {
+      margin: auto;
+    }
+    & svg {
+      vertical-align: middle;
+    }
   }
-}
-footer {
-  width: 100%;
+  @media screen and (max-width: 768px) {
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  @media screen and (max-width: 480px) {
+    margin: 20px auto;
+    &__pink svg {
+      width: 100px;
+    }
+    &__logo {
+      display: none;
+    }
+  }
 }
