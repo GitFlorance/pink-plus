@@ -81,5 +81,29 @@
       margin-bottom: 32px;
     }
   }
+  @media screen and (max-width: 480px) {
+    width: auto;
+    &__img {
+      &-phone {
+        height: auto;
+        width: 150px;
+        margin-bottom: 0;
+      }
+      &-screen {
+        height: auto;
+        width: 133px;
+        top: 42px;
+        left: 9px;
+      }
+    }
+    &__article {
+      font: 700 14px/24px 'Open Sans', sans-serif;
+      margin-bottom: 10px;
+    }
+    &__text {
+      font: 400 14px/24px 'Open Sans', sans-serif;
+      margin-bottom: 20px;
+    }
+  }
 }
 

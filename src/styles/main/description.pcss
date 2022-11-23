@@ -3,7 +3,9 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-
+  &__frame {
+    position: relative;
+  }
   &__name {
     font: 300 50px/68px 'Open Sans', sans-seri;
     margin: 70px;
@@ -42,7 +44,6 @@
     &__phone {
       display: flex;
       justify-content: center;
-
       &-item {
         &:nth-child(1) {
           display: none;
@@ -58,6 +59,30 @@
       &-item {
         width: 310px;
         align-items: flex-start;
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    &__name {
+      font: 300 32px/40px 'Open Sans', sans-seri;
+      margin: 40px auto;
+      width: 350px;
+    }
+    &__frame {
+      align-items: center;
+    }
+    &__phone {
+      &-item {
+        &:nth-child(1) {
+          display: none;
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+    &__body {
+      &-item {
       }
     }
   }

@@ -56,8 +56,21 @@
       left: 378px;
     }
   }
-  @media screen and (max-width: 770px) {
-
+  @media screen and (max-width: 1000px) {
+    &__info {
+      position: relative;
+      z-index: 1;
+      left: 163px;
+      margin: 50px 0 600px;
+      &-name {
+        font: 300 40px/48px 'Open Sans', sans-seri;
+      }
+    }
+    &__img {
+      right: 140px;
+    }
+  }
+  @media screen and (max-width: 768px) {
     &__info {
       position: relative;
       z-index: 1;
@@ -66,19 +79,18 @@
       &-name {
         font: 300 40px/48px 'Open Sans', sans-seri;
       }
-      &-button {}
-      &-img {}
-      &-svg {}
-      &-annex{}
     }
     &__img {
       right: 140px;
-      &-phone {
-
-      }
-      &-screen {
-
-      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    &__info {
+      left: 0;
+      margin: 0;
+    }
+    &__img {
+      display: none;
     }
   }
 }

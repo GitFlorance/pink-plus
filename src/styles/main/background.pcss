@@ -1,29 +1,48 @@
 .back {
-  position: absolute;
-  height: 580px;
-  width: 100%;
-  overflow: hidden;
-  z-index: -1;
-
-
   &__ground {
-    background-color: #F2F2F2;
-    height: 750px;
-    width: 110vw;
-    transform-origin: right;
-    transform: rotate(356deg);
+    position: absolute;
+    height: 580px;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+    &-grey {
+      background-color: #F2F2F2;
+      height: 750px;
+      width: 110vw;
+      transform-origin: right;
+      transform: rotate(356deg);
+    }
   }
   @media screen and (max-width: 768px) {
-    width: 110%;
-    left: 0%;
-    height: 478px;
-    &:nth-child(5) {
+    &:nth-child(1) {
       height: 420px;
     }
     &__ground {
-      width: 110vw;
-      height: 500px;
-      margin-left: -15px;
+      width: 100%;
+      left: 0;
+      height: 478px;
+      &-grey {
+        width: 110vw;
+        height: 500px;
+        margin-left: -15px;
+      }
+
+    }
+  }
+  @media screen and (max-width: 480px) {
+    &:nth-child(1) {
+      height: 420px;
+    }
+    &__ground {
+      width: 100%;
+      left: 0;
+      height: 478px;
+      top: -35px;
+      &-grey {
+        width: 110vw;
+        height: 500px;
+        margin-left: -15px;
+      }
     }
   }
 }

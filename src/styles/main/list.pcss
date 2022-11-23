@@ -7,12 +7,16 @@
     color: #283645;
 
   }
-
   @media screen and (max-width: 768px) {
     &__name {
       max-width: 370px;
       margin: 110px auto 20px;
       font: 300 40px/54px 'Open Sans', sans-seri;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    &__name {
+      font: 300 32px/40px 'Open Sans', sans-seri;
     }
   }
 }
@@ -39,7 +43,7 @@
     flex-wrap: wrap;
     justify-content: center;
     &__item {
-      margin: 29px 50px;
+      margin: 30px 50px;
       &:nth-child(1){
         order: 1;
       }
@@ -54,6 +58,14 @@
       }
       &-info {
         max-width: 211px;
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    &__item {
+      margin: 20px 30px;
+      &-name {
+        margin-bottom: 10px;
       }
     }
   }
