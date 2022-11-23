@@ -2,7 +2,6 @@
   width: 100%;
   background-color: rgb(0 0 0 / 30%);
   position: absolute;
-
   &__container {
     height: 110px;
     display: flex;
@@ -14,16 +13,13 @@
     &-lap {
       display: none;
     }
-
     &-logo {
-      width: 290px;
+      width: 180px;
       line-height: 110px;
-
       & svg {
         vertical-align: middle;
       }
     }
-
     &-menu {
       color: white;
       height: 110px;
@@ -51,7 +47,6 @@
       &-logo {
         display: none;
       }
-
       &-menu {
         background-color: #283645;
         height: 63px;
@@ -62,14 +57,27 @@
       }
     }
   }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 480px) {
     &__container {
-      &-logo {
-
+      &-mob {
+        & svg {
+          vertical-align: middle;
+        }
+        display: block;
+        line-height: 60px;
+        padding-top: 0;
+        padding-left: 20px;
+        border-bottom: 2px solid #0000008c;
       }
-
+      &-lap {
+        display: none;
+      }
+      &-logo {
+        display: none;
+      }
       &-menu {
-
+        height: 55px;
+        font: 700 18px/55px 'Open Sans', sans-seri;
       }
     }
   }
