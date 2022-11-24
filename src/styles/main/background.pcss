@@ -1,42 +1,17 @@
 .back {
-  &__ground {
-    position: absolute;
-    height: 580px;
-    width: 100%;
-    overflow: hidden;
-    z-index: -1;
-    &-grey {
-      background-color: #F2F2F2;
-      height: 750px;
-      width: 110vw;
-      transform-origin: right;
-      transform: rotate(356deg);
-    }
-  }
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  background-color: #f2f2f2;
+  transform: rotate(358deg) translateY(15%);
+  width: 120%;
+  z-index: -1;
   @media screen and (max-width: 768px) {
-    &__ground {
-      width: 100%;
-      left: 0;
-      height: 478px;
-      &-grey {
-        width: 110vw;
-        height: 500px;
-        margin-left: -15px;
-      }
-    }
-    &__ground2 {
-      height: 420px;
-    }
+    transform: rotate(358deg) translate(-10%,5%);
   }
   @media screen and (max-width: 480px) {
-    &__ground {
-      top: -40px;
-      &-grey {
-      }
-    }
-    &__ground2 {
-      height: 410px;
-      top: auto;
-    }
+    transform: rotate(357deg) translate(-10%,5%);
   }
 }
