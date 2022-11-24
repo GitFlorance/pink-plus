@@ -14,9 +14,6 @@
     }
   }
   @media screen and (max-width: 768px) {
-    &:nth-child(1) {
-      height: 420px;
-    }
     &__ground {
       width: 100%;
       left: 0;
@@ -26,23 +23,20 @@
         height: 500px;
         margin-left: -15px;
       }
-
+    }
+    &__ground2 {
+      height: 420px;
     }
   }
   @media screen and (max-width: 480px) {
-    &:nth-child(1) {
-      height: 420px;
-    }
     &__ground {
-      width: 100%;
-      left: 0;
-      height: 478px;
-      top: -35px;
+      top: -40px;
       &-grey {
-        width: 110vw;
-        height: 500px;
-        margin-left: -15px;
       }
+    }
+    &__ground2 {
+      height: 410px;
+      top: auto;
     }
   }
 }

@@ -1,6 +1,6 @@
 .table {
   background-color: #E5E5E5;
-  margin: 140px 0px 80px;
+  margin: 140px 0 80px;
 
   &__head {
     display: grid;
@@ -65,8 +65,11 @@
       }
     }
   }
+  &__circle {
+    display: none;
+  }
   @media screen and (max-width: 768px) {
-    margin: 100px 0px 80px;
+    margin: 100px 0 80px;
     background-color: #F2F2F2;
     &__head {
       width: 608px;
@@ -89,6 +92,31 @@
       }
       &-svg {
         padding: 9px 0;
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    margin: 70px 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__circle {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      &-on {
+        width: 12px;
+        height: 12px;
+        border: 3px solid #283645;
+        border-radius: 6px;
+        margin: 10px;
+      }
+      &-off {
+        width: 6px;
+        height: 6px;
+        background-color: #2936454d;
+        border-radius: 3px;
+        margin: 10px;
       }
     }
   }
