@@ -1,4 +1,6 @@
 .header {
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: rgb(0 0 0 / 30%);
   position: absolute;
@@ -21,21 +23,25 @@
       }
     }
     &-menu {
+      width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-end;
       margin: 0 auto;
     }
     &-menu a {
+      display: block;
+      padding: 0 10px;
       color: white;
       height: 110px;
       font: 700 18px/110px 'Open Sans', sans-seri;
     }
   }
   @media screen and (max-width: 768px) {
+    position: fixed;
     background-color: #283645;
     width: 100%;
     height: auto;
-    position: static;
+    z-index: 4;
     &__container {
       display: block;
       height: auto;
@@ -55,6 +61,7 @@
       }
       &-menu {
         flex-direction: column;
+        display: none;
       }
       &-menu a {
         background-color: #283645;
@@ -67,6 +74,7 @@
 
     }
   }
+
   @media screen and (max-width: 480px) {
     &__container {
       &-mob {
@@ -109,7 +117,6 @@
     margin: 10px 10px;
     cursor: pointer;
     display: inline-block;
-
     &-item {
       width: 5px;
       height: 5px;
@@ -117,7 +124,6 @@
       display: block;
       border-radius: 50%;
       position: absolute;
-
     }
     &-item:hover {
       transform: scale(1.2);
@@ -190,3 +196,4 @@
   }
 }
 
+.show {display: block;}
