@@ -106,4 +106,4 @@ gulp.task('browser-sync', () => {
 
 
 gulp.task('dev', gulp.series('buildCss','buildHtml', 'buildImgs','buildJs','browser-sync'));
-// gulp.task('prod', ['buildCss','buildJs','buildImgs','buildFonts','buildHtml']);
+gulp.task('prod', gulp.series('buildCss','buildHtml', 'buildImgs','buildJs'));

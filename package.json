@@ -6,11 +6,10 @@
     "scripts": {
         "css": "gulp buildCss",
         "dev": "gulp dev",
-        "build": "gulp buildHtml",
+        "build": "gulp prod",
         "all": "gulp browser-sync",
         "pic": "gulp buildImgs",
         "font": "gulp buildFonts",
-
         "js": "gulp buildJs"
     },
     "repository": {
