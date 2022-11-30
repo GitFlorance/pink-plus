@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", ()=>{
 
-
     const icons = document.querySelectorAll('.js-cross');
     console.log(icons)
 
@@ -19,4 +18,29 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 document.getElementById("myDropdown").classList.toggle("show");
             })
         })
+
+    const slider = tns({
+        "container": "#base",
+        "items": 1,
+        "slideBy": "page",
+        "mouseDrag": true,
+        "swipeAngle": false,
+        "autoWidth": false,
+        "speed": 400,
+        "prevButton": ".prevButton",
+        "nextButton": ".nextButton",
+        "navPosition": "bottom",
+        "gutter": 10,
+        responsive: {
+            320: {
+                "prevButton": false,
+                "nextButton": false,
+                "nav": true,
+
+            },
+            769: {
+                "nav": false,
+            }
+        }
+    });
 });
